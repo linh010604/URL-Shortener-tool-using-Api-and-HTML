@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1 {
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 30px;
+        }
+        p {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Shorten your URL link</h1>
+    <p>The URL has been deleted</p>
+    <form action="/data/renew_link" method = "POST">
+        <p>Do you want to renew this link? <input type = "text" name = "renew" /></p>
+        <input type = "hidden" name = "url" value={{url}} />
+    </form>
+</body>
+</html>

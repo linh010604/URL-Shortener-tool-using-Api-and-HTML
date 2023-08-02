@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1 {
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 30px;
+        }
+        p {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Shorten your URL link</h1>
+    <p>
+      The number of access to the shorten URL link : {{form_data[0][3]}}
+    </p>
+    <p>
+      {{form_data[1]}}
+    </p>
+    <p>
+      Expired time : {{form_data[0][2]}}
+    </p>
+    <p>
+      An original URL : {{form_data[0][0]}}
+    </p>
+    <p>
+      Created date : {{form_data[0][1]}}
+    </p>
+    <form action="/data/delete_shorten_link" method = "POST">
+        <p>Do you want to delete the link (Yes/No)? <input type = "text" name = "delete" /></p>
+        <input type = "hidden" name = "url" value={{url}} />
+    </form>
+</body>
+</html>

@@ -1,0 +1,45 @@
+{
+	"info": {
+		"_postman_id": "20b552b3-c0aa-4858-9178-1c46c281f9f7",
+		"name": "URL shorten",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "28021721",
+		"_collection_link": "https://www.postman.com/descent-module-astronomer-15039576/workspace/shorten-url/collection/28021721-20b552b3-c0aa-4858-9178-1c46c281f9f7?action=share&creator=28021721&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Shorten URL link",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"url\": \"https/bit.ly/K9noCm5A\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:5000/data/"
+			},
+			"response": []
+		},
+		{
+			"name": "Get data from shorten url",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get all data",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
